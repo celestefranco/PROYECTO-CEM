@@ -118,3 +118,24 @@
     
 })(jQuery);
 
+// FORM VALIDATION
+
+(function () {
+    'use strict'
+
+var forms = document.querySelectorAll('.needs-validation')
+
+// Validación
+Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            } else {
+                alert("MENSAJE ENVIADO EXITOSAMENTE")
+            }
+            form.classList.add('was-validated')      
+        }, false)
+    })
+})()
