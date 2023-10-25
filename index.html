@@ -27,7 +27,7 @@
     <link href="./assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
     <link href="./assets/css/style.css" rel="stylesheet">
@@ -42,15 +42,12 @@
     <!-- Spinner End -->
 
     <!-- Topbar Start -->
-    <div class="container-fluid px-0 tb">
+    <div class="container-fluid bg-dark px-0">
         <div class="row g-0 d-none d-lg-flex">
             <div class="col-lg-6 ps-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center text-white">
                     <span>Siguenos:</span>
-                    <a class="btn btn-link text-light" href="https://www.facebook.com/profile.php?id=100090358388750"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-link text-light" href="https://www.facebook.com/profile.php?id=100090358388750"><i class="fab fa-facebook-f"></i></a>                  
                 </div>
             </div>
             <div class="col-lg-6 text-end">
@@ -63,12 +60,12 @@
     </div>
     <!-- Topbar End -->
 
+
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5">
-        <a href="./index.html" class="navbar-brand ps-5 me-0">
-            <img class="img-fluid logo" src="./assets/img/logo_CEM.png" alt="">
+        <a href="index.html" class="navbar-brand ps-5 me-0">
+            <h1 class="text-white m-0">CEM</h1>
         </a>
-        
         <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -77,22 +74,13 @@
                 <a href="./index.html" class="nav-item nav-link active">Inicio</a>
                 <a href="./about.html" class="nav-item nav-link">Nosotros</a>
                 <a href="./service.html" class="nav-item nav-link">Servicios</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Paginas</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="./project.html" class="dropdown-item">Proyectos</a>
-                        <a href="./feature.html" class="dropdown-item">Features</a>
-                        <a href="./team.html" class="dropdown-item">Nuestro Equipo</a>
-                        <a href="./testimonial.html" class="dropdown-item">Testimoniales</a>
-                        <a href="./404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
+                <a href="./project.html" class="nav-item nav-link">Proyectos</a>
                 <a href="./contact.html" class="nav-item nav-link">Contacto</a>
-            </div>
-            <a href="./contact.html" class="btn btn-primary px-3 d-none d-lg-block">Solicitar presupuesto</a>
+            </div>           
         </div>
     </nav>
     <!-- Navbar End -->
+
 
     <!-- Carousel Start -->
     <div class="container-fluid px-0 mb-5">
@@ -104,9 +92,9 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-10 text-start">
-                                    <p class="fs-5 fw-medium text-warning text-uppercase animated slideInRight">Experiencia de Trabajo comprobada</p>
+                                    <p class="fs-5 fw-medium texslide text-uppercase animated slideInRight">Experiencia de Trabajo comprobada</p>
                                     <h1 class="display-1 text-white mb-5 animated slideInRight">Brillante <br>como el día, <br>iluminando <br>tus proyectos.</h1>
-                                    <a href="./about.html" class="btn btn-primary py-3 px-5 animated slideInRight">Leer Mas</a>
+                                    <a href="./about.html" class="btn btn-primary py-3 px-5 animated slideInRight">Leer Más</a>
                                 </div>
                             </div>
                         </div>
@@ -118,9 +106,9 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-10 text-start">
-                                    <p class="fs-5 fw-medium text-warning text-uppercase animated slideInRight">Electricistas autorizadas por la Siget</p>
+                                    <p class="fs-5 fw-medium texslide text-uppercase animated slideInRight">Electricistas autorizadas por la Siget</p>
                                     <h1 class="display-1 text-white mb-5 animated slideInRight">Somos la mejor <br>solución del <br>Sector Eléctrico.</h1>
-                                    <a href="./team.html" class="btn btn-primary py-3 px-5 animated slideInRight">Leer Mas</a>
+                                    <a href="#team" class="btn btn-primary py-3 px-5 animated slideInRight">Leer Más</a>
                                 </div>
                             </div>
                         </div>
@@ -139,6 +127,7 @@
     </div>
     <!-- Carousel End -->
 
+
     <!-- About Start -->
     <div class="container-xxl py-5">
         <div class="container">
@@ -156,41 +145,45 @@
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <p class="fw-medium text-uppercase text-primary mb-2">Nosotros</p>
                     <h1 class="display-5 mb-4">Electricistas autorizadas por la Siget</h1>
-                    <p class="mb-4">Somos un Equipo Profesional en la rama de Electricidad enfocado en Servicios Residenciales, tales como: 
+                    <p class="mb-4">Somos un Equipo Profesional en la rama de Electricidad enfocado en Servicios Residenciales, tales como:
                     </p>
                     <div class="d-flex align-items-center mb-4">
                         <div class="flex-shrink-0 bg-primary p-4">
-                            <h1 class="display-2">25</h1>
-                            <h5 class="text-white">Years of</h5>
-                            <h5 class="text-white">Experience</h5>
+                            <h1 class="display-2 text-center">8</h1>
+                            <h5 class="text-white text-center">Meses de</h5>
+                            <h5 class="text-white text-center">Experiencia</h5>
                         </div>
                         <div class="ms-4">
-                            <p><i class="fa fa-check text-primary me-2"></i>Instalaciones Eléctricas</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Reparaciones Eléctricas</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Instalación de Cajas Térmicas</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Mantenimiento de Sistema Eléctrico</p>                            
+                            <p><i class="fa fa-check text-primary me-2 txtjus"></i>Gestión de Presupuestos para Obra o Proyecto.</p>
+                            <p><i class="fa fa-check text-primary me-2 txtjus"></i>Instalación de Tablero.</p>
+                            <p><i class="fa fa-check text-primary me-2 txtjus"></i>Instalación de Cajas y Ductos.</p>
+                            <p><i class="fa fa-check text-primary me-2 txtjus"></i>Instalación de Circuitos Eléctricos Residenciales Bifilares y Trifilares.</p>
+                            <p><i class="fa fa-check text-primary me-2 txtjus"></i>Instalación de Circuitos Eléctricos Especiales.</p>
+                            <p><i class="fa fa-check text-primary me-2 txtjus"></i>Mantenimiento e Instalaciones Electricas Residenciales y Comerciales.</p>
                         </div>
                     </div>
                     <div class="row pt-2">
-                        <div class="col-md-7 col-sm-6">
+                        <div class="col-sm-6 col-md-7">
                             <div class="d-flex align-items-center">
                                 <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
                                     <i class="fa fa-envelope-open text-white"></i>
                                 </div>
                                 <div class="ms-3">
-                                    <p class="mb-2">Email us</p>
-                                    <p class="mb-0 fw-bold email">consultoraelectricaymas@gmail.com</p>
+                                    <p class="mb-2">Escribenos</p>
+                                    <h5 class="mb-0 email">consultoraelectricaymas@gmail.com</h5>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5 col-sm-6">
+                        <div class="col-sm-6 col-md-5">
                             <div class="d-flex align-items-center">
                                 <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
                                     <i class="fa fa-phone-alt text-white"></i>
                                 </div>
                                 <div class="ms-3">
-                                    <p class="mb-2">Contáctanos</p>
-                                    <p class="mb-0 fw-bold watsapp">+503 7605-9686</p>
+                                    <p class="mb-2">Llámanos</p>
+                                    <h5 class="mb-0 watsapp">+503 7605-9686</h5>
+                                    <h5 class="mb-0 watsapp">+503 7927-1451</h5>
+                                    <h5 class="mb-0 watsapp">+503 6131-0045</h5>
                                 </div>
                             </div>
                         </div>
@@ -199,7 +192,7 @@
             </div>
         </div>
     </div>
-    <!-- About End -->
+    <!-- About End -->   
 
     <!-- Features Start -->
     <div class="container-xxl py-5">
@@ -219,11 +212,8 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <p class="fw-medium text-uppercase text-primary mb-2">Por qué elegirnos!</p>
-                    <h1 class="display-5 mb-4">Algunas razones por las que la gente nos elige!</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
-                        eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
-                    </p>
-                    <div class="row gy-4">
+                    <h1 class="display-5 mb-4">(Pendiente)</h1>
+                    <p class="mb-4">Somos un equipo profesional de Mujeres Electricistas que estamos rompiendo estereotipos</p>                    <div class="row gy-4">
                         <div class="col-12">
                             <div class="d-flex">
                                 <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
@@ -231,8 +221,7 @@
                                 </div>
                                 <div class="ms-4">
                                     <h4>Experiencia Comprobada</h4>
-                                    <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna
-                                        dolore erat amet</span>
+                                    <span>Contamos con Experiencia de nuestro Equipo Profesional</span>
                                 </div>
                             </div>
                         </div>
@@ -243,8 +232,7 @@
                                 </div>
                                 <div class="ms-4">
                                     <h4>Servicios Eléctricos garantizados</h4>
-                                    <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna
-                                        dolore erat amet</span>
+                                    <span>Brindamos trabajo eléctrico de calidad</span>
                                 </div>
                             </div>
                         </div>
@@ -274,7 +262,7 @@
         <div class="modal-dialog">
             <div class="modal-content rounded-0">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="exampleModalLabel">Facebook Video</h3>
+                    <h3 class="modal-title" id="exampleModalLabel">Video</h3>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -289,15 +277,16 @@
     </div>
     <!-- Video Modal End -->
 
+
     <!-- Service Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="fw-medium text-uppercase text-primary mb-2">Servicios</p>
-                <h1 class="display-5 mb-4">Ofrecemos Servicios Residenciales</h1>
+                <p class="fw-medium text-uppercase text-primary mb-2">Nuestros Servicios</p>
+                <h3 class="display-5 mb-4">Ofrecemos Servicios Eléctricos Residenciales y Comerciales</h3>
             </div>
             <div class="row gy-5 gx-4">
-                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item">
                         <img class="img-fluid" src="./assets/img/service-1.jpg" alt="">
                         <div class="service-img">
@@ -306,17 +295,17 @@
                         <div class="service-detail">
                             <div class="service-title">
                                 <hr class="w-25">
-                                <h3 class="mb-0">Instalaciones Eléctricas</h3>
+                                <h4 class="mb-0">Gestión de Presupuestos para Obra o Proyecto</h4>
                                 <hr class="w-25">
                             </div>
                             <div class="service-text">
-                                <p class="text-white mb-0">Realizamos instalaciones de fusibles, tomas, interruptores, lámparas y cuadros de luz.</p>
+                                <p class="text-white mb-0">Elaboramos Presupuestos para Obras o Proyectos Residenciales y Comerciales.</p>
                             </div>
                         </div>
-                        <a class="btn btn-light" href="./service.html">Leer Mas</a>
+                        <a class="btn btn-light" href="./service.html">Leer Más</a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item">
                         <img class="img-fluid" src="./assets/img/service-2.jpg" alt="">
                         <div class="service-img">
@@ -325,17 +314,17 @@
                         <div class="service-detail">
                             <div class="service-title">
                                 <hr class="w-25">
-                                <h3 class="mb-0">Reparaciones Eléctricas</h3>
+                                <h4 class="mb-0">Instalación de Tablero</h4>
                                 <hr class="w-25">
                             </div>
                             <div class="service-text">
-                                <p class="text-white mb-0">Realizamos todo tipo de Reparaciones en el Hogar.</p>
+                                <p class="text-white mb-0">Con el cumplimiento de las normas y garantía de calidad y seguridad.</p>
                             </div>
                         </div>
-                        <a class="btn btn-light" href="./service.html">Leer Mas</a>
+                        <a class="btn btn-light" href="./service.html">Leer Más</a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item">
                         <img class="img-fluid" src="./assets/img/service-3.jpg" alt="">
                         <div class="service-img">
@@ -344,17 +333,17 @@
                         <div class="service-detail">
                             <div class="service-title">
                                 <hr class="w-25">
-                                <h3 class="mb-0">Instalación de Cajas Térmicas</h3>
+                                <h3 class="mb-0">Instalación de Cajas y Ductos</h3>
                                 <hr class="w-25">
                             </div>
                             <div class="service-text">
-                                <p class="text-white mb-0">Instalamos Cajas Térmicas, para mayor protección del sistema eléctrico residencial.</p>
+                                <p class="text-white mb-0">Instalamos Cajas y Ductos, para mayor protección del sistema eléctrico residencial.</p>
                             </div>
                         </div>
-                        <a class="btn btn-light" href="./service.html">Leer Mas</a>
+                        <a class="btn btn-light" href="">Leer Más</a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item">
                         <img class="img-fluid" src="./assets/img/service-4.jpg" alt="">
                         <div class="service-img">
@@ -363,14 +352,52 @@
                         <div class="service-detail">
                             <div class="service-title">
                                 <hr class="w-25">
-                                <h3 class="mb-0">Mantenimiento de Sistema Eléctrico</h3>
+                                <h4 class="mb-0">Instalación de Circuitos Eléctricos Residenciales</h4>
                                 <hr class="w-25">
                             </div>
                             <div class="service-text">
-                                <p class="text-white mb-0">Instalación y Mantenimiento de Aparatos Eléctricos, duchas, grifos eléctricos, acondicionares de aire, ventiladores.</p>
+                                <p class="text-white mb-0">Realizamos instalaciones de Circuitos Elécticos Residenciales Bifilares y Trifilares.</p>
                             </div>
                         </div>
-                        <a class="btn btn-light" href="./service.html">Leer Mas</a>
+                        <a class="btn btn-light" href="./service.html">Leer Más</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item">
+                        <img class="img-fluid" src="./assets/img/service-5.jpg" alt="">
+                        <div class="service-img">
+                            <img class="img-fluid" src="./assets/img/service-5.jpg" alt="">
+                        </div>
+                        <div class="service-detail">
+                            <div class="service-title">
+                                <hr class="w-25">
+                                <h4 class="mb-0">Instalación de Circuitos Eléctricos Especiales</h4>
+                                <hr class="w-25">
+                            </div>
+                            <div class="service-text">
+                                <p class="text-white mb-0">Realizamos instalaciones de Circuitos Especiales.</p>
+                            </div>
+                        </div>
+                        <a class="btn btn-light" href="./service.html">Leer Más</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <img class="img-fluid" src="./assets/img/service-6.jpg" alt="">
+                        <div class="service-img">
+                            <img class="img-fluid" src="./assets/img/service-6.jpg" alt="">
+                        </div>
+                        <div class="service-detail">
+                            <div class="service-title">
+                                <hr class="w-25">
+                                <h4 class="mb-0">Mantenimiento e Instalaciones Eléctricas Residenciales y Comerciales</h4>
+                                <hr class="w-25">
+                            </div>
+                            <div class="service-text">
+                                <p class="text-white mb-0">Realizamos Mantenimiento e Instalaciones Eléctricas Residenciales y Comerciales.</p>
+                            </div>
+                        </div>
+                        <a class="btn btn-light" href="">Leer Más</a>
                     </div>
                 </div>
             </div>
@@ -378,62 +405,58 @@
     </div>
     <!-- Service End -->
 
+
     <!-- Project Start -->
     <div class="container-fluid bg-dark pt-5 my-5 px-0">
         <div class="text-center mx-auto mt-5 wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
             <p class="fw-medium text-uppercase text-primary mb-2">Nuestros Proyectos</p>
-            <h1 class="display-5 text-white mb-5">Mira lo que hemos hecho recientemente </h1>
+            <h1 class="display-5 text-white mb-5">Proyectos Realizados</h1>
         </div>
         <div class="owl-carousel project-carousel wow fadeIn" data-wow-delay="0.1s">
             <a class="project-item" href="">
                 <img class="img-fluid" src="./assets/img/project-1.jpg" alt="">
                 <div class="project-title">
-                    <h5 class="text-primary mb-0">Auto Engineering</h5>
+                    <h5 class="text-primary mb-0">Instalación de Cajas y Ductos</h5>
                 </div>
             </a>
             <a class="project-item" href="">
                 <img class="img-fluid" src="./assets/img/project-2.jpg" alt="">
                 <div class="project-title">
-                    <h5 class="text-primary mb-0">Civil Engineering</h5>
+                    <h5 class="text-primary mb-0">Instalación de Lámparas de Piso</h5>
                 </div>
             </a>
             <a class="project-item" href="">
                 <img class="img-fluid" src="./assets/img/project-3.jpg" alt="">
                 <div class="project-title">
-                    <h5 class="text-primary mb-0">Gas Engineering</h5>
+                    <h5 class="text-primary mb-0">Mantenimiento de Lámparas de Piso</h5>
                 </div>
             </a>
             <a class="project-item" href="">
                 <img class="img-fluid" src="./assets/img/project-4.jpg" alt="">
                 <div class="project-title">
-                    <h5 class="text-primary mb-0">Power Engineering</h5>
+                    <h5 class="text-primary mb-0">Instalación de Circuitos Eléctricos</h5>
                 </div>
             </a>
             <a class="project-item" href="">
                 <img class="img-fluid" src="./assets/img/project-5.jpg" alt="">
                 <div class="project-title">
-                    <h5 class="text-primary mb-0">Energy Engineering</h5>
+                    <h5 class="text-primary mb-0">Instalación de Tablero</h5>
                 </div>
-            </a>
-            <a class="project-item" href="">
-                <img class="img-fluid" src="./assets/img/project-6.jpg" alt="">
-                <div class="project-title">
-                    <h5 class="text-primary mb-0">Water Engineering</h5>
-                </div>
-            </a>
+            </a>           
         </div>
     </div>
     <!-- Project End -->
 
+
     <!-- Team Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5" id="team">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <p class="fw-medium text-uppercase text-primary mb-2">Nuestro Equipo</p>
-                <h1 class="display-5 mb-5">Integrantes del Equipo CEM</h1>
+                <h2 class="display-5 mb-5">Integrantes del Equipo CEM y Junta Directiva</h2>
             </div>
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item">
                         <img class="img-fluid" src="./assets/img/team-1.jpg" alt="">
                         <div class="d-flex">
@@ -442,21 +465,13 @@
                             </div>
                             <div class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center w-100 ps-4"
                                 style="height: 90px;">
-                                <h5>Patricia Meléndez</h5>
-                                <span class="text-primary">Ingeniera & Fundadora</span>
-                                <div class="team-social">
-                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i
-                                            class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i
-                                            class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i
-                                            class="fab fa-instagram"></i></a>
-                                </div>
+                                <h6>Yesica de los Angeles Baños de Castro</h6>
+                                <span class="text-primary">Presidenta</span>                               
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item">
                         <img class="img-fluid" src="./assets/img/team-2.jpg" alt="">
                         <div class="d-flex">
@@ -465,21 +480,13 @@
                             </div>
                             <div class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center w-100 ps-4"
                                 style="height: 90px;">
-                                <h5>Yessica Baños</h5>
-                                <span class="text-primary">Técnica Electricista</span>
-                                <div class="team-social">
-                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i
-                                            class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i
-                                            class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i
-                                            class="fab fa-instagram"></i></a>
-                                </div>
+                                <h6>Marlene Elisa Henríquez de Paz</h6>
+                                <span class="text-primary mt-3">Vice-Presidenta</span>                                
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                </div>                
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item">
                         <img class="img-fluid" src="./assets/img/team-3.jpg" alt="">
                         <div class="d-flex">
@@ -488,16 +495,23 @@
                             </div>
                             <div class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center w-100 ps-4"
                                 style="height: 90px;">
-                                <h5>Ana Martínez</h5>
-                                <span class="text-primary">Técnica Electricista</span>
-                                <div class="team-social">
-                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i
-                                            class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i
-                                            class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i
-                                            class="fab fa-instagram"></i></a>
-                                </div>
+                                <h6>Patricia Edith Melendez Navas</h6>
+                                <span class="text-primary mt-3">Secretaria</span>                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item">
+                        <img class="img-fluid" src="./assets/img/team-4.jpg" alt="">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-square bg-primary" style="width: 90px; height: 90px;">
+                                <i class="fa fa-2x fa-share text-white"></i>
+                            </div>
+                            <div class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center w-100 ps-4"
+                                style="height: 90px;">
+                                <h6>Marta Graciela Gamacho Mancía</h6>
+                                <span class="text-primary mt-3">Tesorera</span>                               
                             </div>
                         </div>
                     </div>
@@ -507,76 +521,64 @@
     </div>
     <!-- Team End -->
 
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="fw-medium text-uppercase text-primary mb-2">Testimoniales</p>
-                <h1 class="display-5 mb-5">Que dicen nuestros clientes!</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="testimonial-item text-center">
-                    <div class="testimonial-img position-relative">
-                        <img class="img-fluid rounded-circle mx-auto mb-5" src="./assets/img/testimonial-1.jpg">
-                        <div class="btn-square bg-primary rounded-circle">
-                            <i class="fa fa-quote-left text-white"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-text text-center rounded p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna
-                            ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea
-                            clita.</p>
-                        <h5 class="mb-1">Client Name</h5>
-                        <span class="fst-italic">Profession</span>
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-4">Nuestra oficina</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Colonia y Calle Quezaltepec, No. 76, Santa
+                        Tecla, La Libertad, El Salvador C.A.</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+503 7605 9686</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+503 7927-1451</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+503 6131-0045</p>
+                    <p class="mb-2 email-1"><i class="fa fa-envelope me-3"></i>consultoraelectricaymas@gmail.com</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href="https://www.facebook.com/profile.php?id=100090358388750"><i
+                                class="fab fa-facebook-f"></i></a>                       
                     </div>
                 </div>
-                <div class="testimonial-item text-center">
-                    <div class="testimonial-img position-relative">
-                        <img class="img-fluid rounded-circle mx-auto mb-5" src="./assets/img/testimonial-2.jpg">
-                        <div class="btn-square bg-primary rounded-circle">
-                            <i class="fa fa-quote-left text-white"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-text text-center rounded p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna
-                            ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea
-                            clita.</p>
-                        <h5 class="mb-1">Client Name</h5>
-                        <span class="fst-italic">Profession</span>
-                    </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-4">Enlaces directos</h5>
+                    <a class="btn btn-link" href="./about.html">Quienes Somos</a>
+                    <a class="btn btn-link" href="./contact.html">Contacto</a>
+                    <a class="btn btn-link" href="./service.html">Nuestros Servicios</a>
+                    <a class="btn btn-link" href="./project.html">Nuestros Proyectos</a>
                 </div>
-                <div class="testimonial-item text-center">
-                    <div class="testimonial-img position-relative">
-                        <img class="img-fluid rounded-circle mx-auto mb-5" src="./assets/img/testimonial-3.jpg">
-                        <div class="btn-square bg-primary rounded-circle">
-                            <i class="fa fa-quote-left text-white"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-text text-center rounded p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna
-                            ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea
-                            clita.</p>
-                        <h5 class="mb-1">Client Name</h5>
-                        <span class="fst-italic">Profession</span>
-                    </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-4">Horario de Oficina</h5>
+                    <p class="mb-1">Lunes - Viernes</p>
+                    <h6 class="text-light">08:00 am - 05:00 pm</h6>
+                    <p class="mb-1">Sábados</p>
+                    <h6 class="text-light">08:00 am - 12:00 pm</h6>
+                    <p class="mb-1">Domingo</p>
+                    <h6 class="text-light">Cerrado</h6>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Testimonial End -->
+    <!-- Footer End -->
 
 
-
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright bg-dark py-4">
+        <div class="container text-center">
+            <p class="mb-2">Copyright &copy; <a class="fw-semi-bold" href="./index.html">CEM - Consultora Eléctrica y Más</a>, Todos los
+                derechos reservados.
+            </p>           
+        </div>
+    </div>
+    <!-- Copyright End -->
 
 
     <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
             class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/lib/wow/wow.min.js"></script>
     <script src="./assets/lib/easing/easing.min.js"></script>
     <script src="./assets/lib/waypoints/waypoints.min.js"></script>

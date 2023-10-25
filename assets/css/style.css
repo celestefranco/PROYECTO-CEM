@@ -1,12 +1,10 @@
+/********** Template CSS **********/
 :root {
     --primary: #FF5E14;
     --secondary: #5F656F;
     --light: #F5F5F5;
-    --blue: #02245B;
+    --dark: #02245B;
     --yellow: #ffc000;
-    --white: #FFFFFF;
-    --bone: #EEEEEE;
-    --dark: #000000;
 }
 
 .back-to-top {
@@ -56,10 +54,6 @@ h6,
     opacity: 1;
 }
 
-/*** Top Bar ***/
-.tb{
-    background-color: var(--blue);
-}
 
 /*** Button ***/
 .btn {
@@ -69,7 +63,7 @@ h6,
 
 .btn-primary,
 .btn-outline-primary:hover {
-    color:var(--white);
+    color: #FFFFFF;
 }
 
 .btn-square {
@@ -127,7 +121,7 @@ h6,
     height: 80px;
     display: flex;
     align-items: center;
-    background: var(--primary);
+    background-color: var(--primary);
 }
 
 .navbar .navbar-brand::after {
@@ -138,13 +132,13 @@ h6,
     top: 0;
     right: -25px;
     transform: skewX(-30deg);
-    background-color: var(--primary);
+    background-color: #FFFFFF;
 }
 
 .navbar .navbar-nav .nav-link {
     margin-right: 35px;
     padding: 20px 0;
-    color: var(--blue);
+    color: var(--dark);
     font-size: 20px;
     font-weight: 500;
     outline: none;
@@ -165,13 +159,13 @@ h6,
 }
 
 @media (max-width: 991.98px) {
-    .navbar .navbar-nav .nav-link  {
+    .navbar .navbar-nav .nav-link {
         margin-right: 0;
         padding: 10px 0;
     }
 
     .navbar .navbar-nav {
-        border-top: 1px solid var(--bone);
+        border-top: 1px solid #EEEEEE;
     }
 }
 
@@ -194,10 +188,27 @@ h6,
     }
 }
 
-.logo{
-    width: 75px;
-    height: 75px;
-} 
+.logo {
+    width: 225px;
+    height: 200px;
+    margin-left: 100px;
+}
+
+@media (min-width: 768px) {
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+}
 
 /*** Header ***/
 .carousel-caption {
@@ -211,6 +222,10 @@ h6,
     z-index: 1;
 }
 
+.texslide {
+    color: var(--yellow);
+}
+
 .carousel-control-prev,
 .carousel-control-next {
     width: 15%;
@@ -220,8 +235,8 @@ h6,
 .carousel-control-next-icon {
     width: 3.5rem;
     height: 3.5rem;
-    background-color: var(--primary);
-    border: 15px solid var(--primary);
+    background-color: var(--yellow);
+    border: 15px solid var(--yellow);
     border-radius: 3.5rem;
 }
 
@@ -230,7 +245,7 @@ h6,
         position: relative;
         min-height: 450px;
     }
-    
+
     #header-carousel .carousel-item img {
         position: absolute;
         width: 100%;
@@ -240,7 +255,7 @@ h6,
 }
 
 .page-header {
-    background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(../img/carousel-2.jpg) center center no-repeat;
+    background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(../img/pageheader.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -255,13 +270,26 @@ h6,
 }
 
 /** About **/
-.email {
-    font-size: 15px;
+.txtjus {
+    text-align: justify;
 }
 
-.watsapp{
-    font-size: 16px;
+.txtop {
+    margin-top: 60px;
 }
+
+.email {
+    font-size: 14px;
+}
+
+.watsapp {
+    font-size: 14.5px;
+}
+
+.paragraph {
+    text-align: justify;
+}
+
 
 
 /*** Features ***/
@@ -326,7 +354,7 @@ h6,
     width: 0;
     height: 0;
     left: -1px;
-    border-left: 16px solid var(--white);
+    border-left: 16px solid #FFFFFF;
     border-top: 11px solid transparent;
     border-bottom: 11px solid transparent;
 }
@@ -363,10 +391,11 @@ h6,
     z-index: 999;
     font-size: 30px;
     font-weight: normal;
-    color: var(--white);
-    background: var(--dark);
+    color: #FFFFFF;
+    background: #000000;
     opacity: 1;
 }
+
 
 /*** Service ***/
 .service-item {
@@ -383,7 +412,7 @@ h6,
     top: -65px;
     left: 50%;
     transform: translateX(-50%);
-    background: var(--white);
+    background: #FFFFFF;
     box-shadow: 0 0 45px rgba(0, 0, 0, .09);
     z-index: 2;
 }
@@ -410,7 +439,7 @@ h6,
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: var(--white);
+    background: #FFFFFF;
     transition: .5s;
 }
 
@@ -445,7 +474,7 @@ h6,
     top: -100%;
     left: 0;
     transform: skewY(-12deg);
-    background: var(--white);
+    background: #FFFFFF;
     transition: .5s;
 }
 
@@ -464,21 +493,22 @@ h6,
     align-items: center;
     justify-content: center;
     color: var(--secondary);
-    background: var(--white);
+    background: #FFFFFF;
     border: none;
     box-shadow: 0 0 45px rgba(0, 0, 0, .09);
     z-index: 2;
 }
 
 .service-item .btn:hover {
-    color: var(--white);
+    color: #FFFFFF;
     background: var(--primary);
 }
+
 
 /*** Project ***/
 .project-carousel {
     position: relative;
-    background: var(--blue);
+    background: var(--dark);
 }
 
 .project-item {
@@ -506,12 +536,12 @@ h6,
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: var(--blue);
+    background: var(--dark);
     transition: .5s;
 }
 
 .project-item:hover .project-title,
-.project-carousel .owl-item.center .project-title  {
+.project-carousel .owl-item.center .project-title {
     bottom: -60px;
 }
 
@@ -523,7 +553,7 @@ h6,
     top: -15px;
     left: 0;
     transform: skewY(-5deg);
-    background: var(--blue);
+    background: var(--dark);
     transition: .5s;
 }
 
@@ -553,12 +583,13 @@ h6,
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--white);
+    color: #FFFFFF;
     background: var(--primary);
     border-radius: 45px;
     font-size: 22px;
     transition: .5s;
 }
+
 
 /*** Team ***/
 .team-item .team-social {
@@ -577,7 +608,8 @@ h6,
     left: 0;
 }
 
-*** Testimonial ***/
+
+/*** Testimonial ***/
 .testimonial-carousel::before {
     position: absolute;
     content: "";
@@ -601,6 +633,7 @@ h6,
 }
 
 @media (min-width: 768px) {
+
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 200px;
@@ -608,6 +641,7 @@ h6,
 }
 
 @media (min-width: 992px) {
+
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 300px;
@@ -642,7 +676,7 @@ h6,
 
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
-    color: var(--blue);
+    color: var(--dark);
 }
 
 .testimonial-carousel .testimonial-img img {
@@ -666,4 +700,44 @@ h6,
 
 .testimonial-carousel .owl-item.center .testimonial-text {
     transform: scale(1);
+}
+
+
+/*** Footer ***/
+.footer {
+    color: #B0B9AE;
+}
+
+.email-1 {
+    font-size: 12.5px;
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: #B0B9AE;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    color: var(--light);
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.copyright {
+    color: #B0B9AE;
+    border-top: 1px solid rgba(255, 255, 255, .1);
 }
