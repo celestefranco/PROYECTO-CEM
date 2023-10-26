@@ -5,6 +5,9 @@
     --light: #F5F5F5;
     --dark: #02245B;
     --yellow: #ffc000;
+    --white: #FFFFFF;
+    --bone: #EEEEEE;
+    --dark: #000000;
 }
 
 .back-to-top {
@@ -282,8 +285,8 @@ h6,
     font-size: 14px;
 }
 
-.watsapp {
-    font-size: 14.5px;
+.watsapp{
+    font-size: 16px;
 }
 
 .paragraph {
@@ -700,6 +703,48 @@ h6,
 
 .testimonial-carousel .owl-item.center .testimonial-text {
     transform: scale(1);
+}
+
+/*** Footer ***/
+.footer {
+    color: var(--grey);
+    background-color: var(--blue);
+}
+
+.email1 {
+    font-size: 13px;
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: var(--grey);
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;   
+    text-decoration: none;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    color: var(--light);
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.copyright {
+    color: var(--grey);
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    background-color: var(--blue);
 }
 
 
