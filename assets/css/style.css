@@ -668,6 +668,11 @@ h6,
     transform: scale(1);
 }
 
+.name-contact {
+    font-weight: bold;
+    color: #000;
+}
+
 /*** Footer ***/
 .footer {
     color: #B0B9AE;
@@ -703,7 +708,5 @@ h6,
     border-top: 1px solid rgba(255, 255, 255, .1);
 }
 
-.f-size {
-    font-size: 12.5px;
-}
+
 
